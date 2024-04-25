@@ -14,17 +14,17 @@ body {
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 100px;
     color: white;
 }
 
 .border-letter {
 
-    font-size: 200px;
+    font-size: 100px;
     -webkit-text-stroke: 5px #ffffff;
     font-size: 250px;
     -webkit-text-stroke: 3.5px #000000;
-    font-family: "Algerian";
+    font-family: "'Georgia";
 }
 
 .button-container {
@@ -35,7 +35,7 @@ h1 {
 button {
     padding: 10px 20px;
     font-size: 30px;
-    background-color: #ff8c00;
+    background-color: #0a3a18;
     margin-bottom: 100px;
     color: white;
     border: none;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff6d00;
+    background-color: #0a3a18;
 }
 
 body {

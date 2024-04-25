@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/quienessomos.css">
     <title>Fundadores | FrenTosh</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\logodejogobonito.jpg">
     <h1>Fundadores</h1>
 </head>
 
@@ -59,4 +59,44 @@
 
 </body>
 
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones Falsas</title>
+    <!-- Agrega tus estilos CSS aquí -->
+</head>
+<body>
+    <h1>Mis Eventos Próximos</h1>
+    <ul id="eventos-lista">
+        <li>Recordatorio: Mañana a las 10:00 AM tenemos una reunión de equipo. ¡No faltes!</li>
+        <li>Próximo evento: El jueves a las 18:30 tendremos entrenamiento de fútbol en el campo.</li>
+        <li>No olvides: El sábado a las 9:00 AM tendremos un emocionante partido de baloncesto en el gimnasio.</li>
+        <li>¡Atención! Microfútbol: El domingo a las 16:00, ven al campo para disfrutar de un torneo de microfútbol.</li>
+        <!-- Puedes agregar más notificaciones aquí -->
+    </ul>
+
+    <script>
+        // Función para generar notificaciones falsas aleatoriamente
+        function generarNotificacion() {
+            const eventos = [
+                "Reunión de equipo",
+                "Entrenamiento de fútbol",
+                "Partido de baloncesto",
+                "Torneo de microfútbol"
+            ];
+            const eventoAleatorio = eventos[Math.floor(Math.random() * eventos.length)];
+
+            const lista = document.getElementById("eventos-lista");
+            const li = document.createElement("li");
+            li.textContent = `Próximo evento: ${eventoAleatorio}`;
+            lista.appendChild(li);
+        }
+
+        // Generar una notificación cada 30 segundos
+        setInterval(generarNotificacion, 30000);
+    </script>
+</body>
 </html>
